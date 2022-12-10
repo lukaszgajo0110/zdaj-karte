@@ -1,0 +1,129 @@
+/*--- OGÓLNE STYLE - nie ruszać!!! ---*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  color: #343a40;
+}
+
+.kontener {
+  transition: margin-left 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  margin-top: 100px;
+  padding: 8px 16px !important;
+}
+
+/*--- GÓRNY PASEK ---*/
+.gorny_pasek {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.logo {
+  background-color: #dbe4ff !important;
+  font-size: 24px !important;
+  margin: auto;
+}
+
+.logo_link {
+  text-align: center !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+/*--- CZEŚĆ INFORMACYJNA ---*/
+.informacja {
+  padding: 0.01em 16px;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  display: inline-block;
+  width: auto;
+  text-align: center !important;
+}
+
+.informacje_tekst {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+/*--- CZĘŚĆ DRUGA --- */
+.siatka_wyboru {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  display: inline-block;
+  width: auto;
+  text-align: center !important;
+}
+
+.przestrzen_komorki,
+.przestrzen_komorki > .w3-half,
+.przestrzen_komorki > .w3-third,
+.przestrzen_komorki > .cztery-kol {
+  padding: 0 8px;
+}
+
+.cztery-kol {
+  float: left;
+  width: 100%;
+  box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.zdjecie {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 12px;
+}
+
+/*--- LINKI ---*/
+h3:link {
+  text-decoration: none;
+  color: #343a40;
+}
+
+h3:hover {
+  color: #5f3dc4;
+  font-size: 110%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #343a40;
+}
+
+a:hover {
+  color: #5f3dc4;
+  font-size: 110%;
+}
+
+/*--- RESPONSYWNOŚĆ - nie ruszać---*/
+@media (min-width: 601px) {
+  .cztery-kol {
+    width: 24.99999%;
+  }
+  .w3-third {
+    width: 33.33333%;
+  }
+  .w3-half {
+    width: 49.99999%;
+  }
+}
