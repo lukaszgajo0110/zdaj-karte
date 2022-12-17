@@ -31,6 +31,7 @@ h6 {
 /*--- GÓRNY PASEK ---*/
 .gorny_pasek {
   position: fixed;
+  left: 0;
   width: 100%;
   z-index: 1;
   top: 0;
