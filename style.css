@@ -14,7 +14,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 footer {
   font-family: "Rubik", sans-serif;
   color: #343a40;
 }
@@ -31,7 +31,6 @@ h6 {
 /*--- GÓRNY PASEK ---*/
 .gorny_pasek {
   position: fixed;
-  left: 0;
   width: 100%;
   z-index: 1;
   top: 0;
@@ -79,8 +78,27 @@ h6 {
 .przestrzen_komorki > .cztery-kol {
   padding: 0 8px;
 }
+.przestrzen_komorki > .trzy-kol {
+  padding: 0 8px;
+}
+.przestrzen_komorki > .dwie-kol {
+  padding: 0 8px;
+}
 
 .cztery-kol {
+  float: left;
+  width: 100%;
+  box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.trzy-kol {
+  float: left;
+  width: 100%;
+  box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+.dwie-kol {
   float: left;
   width: 100%;
   box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.07);
@@ -129,10 +147,29 @@ a:hover {
   .cztery-kol {
     width: 24.99999%;
   }
+  .trzy-kol {
+    width: 33.33333%;
+  }
+  .dwie-kol {
+    width: 49.99999%;
+  }
   .w3-third {
     width: 33.33333%;
   }
   .w3-half {
     width: 49.99999%;
   }
+}
+
+footer {
+  font-size: 14px;
+  font-style: italic;
+  width: 100%;
+  height: 50px;
+  background: #dbe4ff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: -1;
+  left: 0;
 }
