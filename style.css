@@ -143,6 +143,16 @@ a:hover {
   font-size: 110%;
 }
 
+a.bibliografia:hover {
+  font-size: 100%;
+  color: #5f3dc4;
+}
+
+a.bibliografia {
+  text-decoration: underline;
+  color: #343a40;
+}
+
 /*--- RESPONSYWNOŚĆ - nie ruszać---*/
 @media (min-width: 601px) {
   .cztery-kol {
