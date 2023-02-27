@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>zdaj-karte.pl</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Górny pasek -->
+    <div class="gorny_pasek">
+      <div class="logo">
+        <a href="index.html">
+          <div class="logo_link"><b>Strona główna</b></div></a
+        >
+      </div>
+    </div>
+
+    <div class="kontener">
+      <hr id="inf_przerwa" />
+      <div class="informacja">
+        <h2>Test końcowy</h2>
+        <div class="informacje_tekst">
+          <p>
+            Witaj w sekcji, w której sprawdzisz zdobytą wiedzę. Poniżej widzisz quiz składający się z 15 losowo wybranych z naszej bazy pytań. Po kliknięciu rozpocznij quiz zostanie wyświetlone pierwsze pytanie. Zaznacz jedną z czterech odpowiedzi. Po wybraniu odpowiedzi zostaniejsz poinformowany o jej poprawności poprzez zielony lub czerwony kolor. Aby przejść do kolejnego pytania należy kliknąć przycisk dalej. Po zaznaczeniu odpowiedzi na ostatnie pytanie zostanie wyświetlona informacja podsumowująca twoje podejście. Z tego miejsca będziesz mógł powrócić do korzystania ze strony lub rozpocząć quiz ponowie. Powodzenia!
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="informacja">
+        <div class="quiz-naglowek quiz-space">
+          <h3>Test końcowy</h3>
+          <p>Liczba pytań w teście: 15 <span class="total-question"></span></p>
+          <button type="button" class="przycisk" onclick="startQuizu()">
+            Rozpocznij
+          </button>
+        </div>
+    
+        <div class="quiz-gra quiz-space hide">
+          <div class="numer"></div>
+          <div class="polecenie"></div>
+          <div class="odpowiedzi"></div>
+          <div class="nastepne-pytanie-przycisk">
+            <button type="button" class="przycisk" onclick="dalej()">
+              Następne pytanie
+            </button>
+          </div>
+        </div>
+    
+        <div class="wynik quiz-space hide">
+          <h1>Podsumowanie</h1>
+          <table>
+            <tr>
+              <td>Poprawne odpowiedzi</td>
+              <td><span class="odp-poprawne"></span></td>
+            </tr>
+            <tr>
+              <td>Błędne odpowiedzi</td>
+              <td><span class="odp-bledne"></span></td>
+            </tr>
+            <tr>
+              <td>Wynik w procentach</td>
+              <td><span class="odp-proc"></span></td>
+            </tr>
+            <tr>
+              <td>Wynik</td>
+              <td><span class="odp-wynik"></span></td>
+            </tr>
+          </table>
+          <button type="button" class="przycisk" onclick="jeszczeRaz()">
+            Spróbój ponowie
+          </button>
+          <button type="button" class="przycisk" onclick="powrot()">Powrót</button>
+        </div>
+    
+        <script src="js/question.js"></script>
+        <script src="js/app.js"></script>
+      </div>
+  </body>
+  <footer>
+    <a href="quiz.html">
+      <div><b>powrót na górę strony</b></div></a
+    >
+    <div><i>Copyright 2022, Wojciech Wnuk, Łukasz Gajo, Błażej Krause</i></div>
+  </footer>
+</html>
